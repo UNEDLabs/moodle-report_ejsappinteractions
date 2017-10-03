@@ -34,8 +34,8 @@ Moodle installation directory.
 ===============
 
 This plugin needs the ejsapp module to be of any use. It works with version 3.1 (or later) of EJSApp. You can find and
-download it at https://moodle.org/plugins/view.php?plugin=mod_ejsapp, in the plugins section in the Moodle.org
-webpage or at https://github.com/UNEDLabs.
+download it at https://moodle.org/plugins/view.php?plugin=report_ejsappinteractions, in the plugins section in the
+Moodle.org webpage or at https://github.com/UNEDLabs.
 
 5. Authors
 ==========
