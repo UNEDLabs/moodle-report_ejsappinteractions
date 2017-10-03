@@ -30,7 +30,7 @@ This plugin needs the ejsapp module to be of any use. It works with version 3.1 
 
 5. Authors
 ==========
-EJSApp has been developed by:
+EJSApp Interactions has been developed by:
  - Luis de la Torre: ldelatorre@dia.uned.es
  - Felix García: fgarcia@um.es
 
