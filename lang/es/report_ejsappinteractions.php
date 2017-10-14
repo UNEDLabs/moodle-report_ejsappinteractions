@@ -25,3 +25,4 @@
 
 $string['navigationlink'] = 'Interacciones de usuarios con EJSApp';
 $string['pluginname'] = 'Interacciones EJSApp';
+$string['ejsappinteractions:view'] = 'Ver datos de interacciones de usuario en laboratorios EJSApp';
