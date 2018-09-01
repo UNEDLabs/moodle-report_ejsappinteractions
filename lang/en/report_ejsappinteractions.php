@@ -17,12 +17,14 @@
 /**
  * Lang strings.
  *
- * @package   report_usersessions
- * @copyright 2014 Totara Learning Solutions Ltd {@link http://www.totaralms.com/}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @author    Petr Skoda <petr.skoda@totaralms.com>
+ * @package    report_ejsappinteractions
+ * @copyright  2018 Luis de la Torre
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['navigationlink'] = 'EJSApp user interactions';
 $string['pluginname'] = 'EJSApp interactions';
 $string['ejsappinteractions:view'] = 'View users\' interactions data in EJSApp labs';
+
+//Privacy
+$string['privacy:metadata'] = 'The EJSApp Interactions report plugin only displays the already stored information about user\'s interactions in EJSApp activities.';
