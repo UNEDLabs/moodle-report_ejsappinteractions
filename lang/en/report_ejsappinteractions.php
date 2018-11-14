@@ -27,4 +27,5 @@ $string['pluginname'] = 'EJSApp interactions';
 $string['ejsappinteractions:view'] = 'View users\' interactions data in EJSApp labs';
 
 //Privacy
-$string['privacy:metadata'] = 'The EJSApp Interactions report plugin only displays the already stored information about user\'s interactions in EJSApp activities.';
+$string['privacy:metadata'] = 'The EJSApp Interactions report plugin only displays the already stored information about '
+. 'user\'s interactions in EJSApp activities.';

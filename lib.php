@@ -30,12 +30,13 @@ defined('MOODLE_INTERNAL') || die;
  * @param navigation_node $navigation The navigation node to extend
  * @param stdClass $course The course to object for the report
  * @param context $context
+ * @throws
  */
 function report_ejsappinteractions_extend_navigation_course($navigation, $course, $context) {
     if (has_capability('report/ejsappinteractions:view', $context)) {
         $navigation->add(get_string('navigationlink', 'report_ejsappinteractions'),
-            new moodle_url('/report/ejsappinteractions/index.php', array('id'=>$course->id)),
-            $navigation::TYPE_SETTING, null, null, new pix_icon('i/report', ''));
+            new moodle_url('/report/ejsappinteractions/index.php', array('id' => $course->id)),
+            $navigation::TYPE_SETTING, null, 'ejsappreport', new pix_icon('i/report', ''));
     }
 }
 
@@ -44,11 +45,16 @@ function report_ejsappinteractions_extend_navigation_course($navigation, $course
  *
  * @param navigation_node $navigation The navigation node to extend
  * @param stdClass $cm
+ * @throws
  */
 function report_ejsappinteractions_extend_navigation_module($navigation, $cm) {
-    if (has_capability('report/ejsappinteractions:view', context_course::instance($cm->course))) {
-        $navigation->add(get_string('navigationlink', 'report_ejsappinteractions'),
-            new moodle_url('/report/ejsappinteractions/index.php', array('id' => $cm->course, 'coursemoduleid' => $cm->id)),
-            $navigation::TYPE_SETTING, null, 'ejsappreport');
+    global $PAGE;
+
+    if (strpos($PAGE->url, 'mod/ejsapp/view.php') !== false) {
+        if (has_capability('report/ejsappinteractions:view', context_course::instance($cm->course))) {
+            $navigation->add(get_string('navigationlink', 'report_ejsappinteractions'),
+                new moodle_url('/report/ejsappinteractions/index.php', array('id' => $cm->course, 'coursemoduleid' => $cm->id)),
+                $navigation::TYPE_SETTING, null, 'ejsappreport', new pix_icon('i/report', ''));
+        }
     }
 }
