@@ -2,6 +2,8 @@
 
 This plugin offers visual representations of interesting data gathered by the EJSApp module activity. This data consist on the users interactions with the lab applications deployed in the EJSApp activities. Teachers can select which activity, user and experimentation session they want to display data for. They can also choose between a wide variety of data to display: number of clicks, time spent in the lab, input values...
 
+This plugin version is INCOMPLETE. If you are interested in its idea and are looking for a more developed version, contact Nebulous Systems (https://www.nebsyst.com - contact@nebsyst.com).
+
 ## 2. License
 
 EJSApp Interactions is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
